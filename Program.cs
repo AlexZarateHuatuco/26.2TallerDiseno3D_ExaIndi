@@ -10,6 +10,8 @@ namespace TallerDiseno3D_ExaIndi
     {
         static void Main(string[] args)
         {
+            Game game = new Game();
+            game.Iniciar();
         }
     }
 }
