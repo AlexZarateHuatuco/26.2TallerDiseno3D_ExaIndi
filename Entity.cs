@@ -13,8 +13,8 @@ namespace TallerDiseno3D_ExaIndi
 
         public Entity(int vida, int daño)
         {
-            this.vida = Clamp(vida, 0, 100);
-            this.daño = Clamp(daño, 0, 100);
+            this.vida = Clamp(vida, 2, 15);
+            this.daño = Clamp(daño, 2, 15);
         }
 
         private static int Clamp(int value, int min, int max)

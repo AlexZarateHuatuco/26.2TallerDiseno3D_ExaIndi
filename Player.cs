@@ -14,8 +14,6 @@ namespace TallerDiseno3D_ExaIndi
 
         public Player(int vida, int daño) : base(vida, daño)
         {
-            this.vida = vida;
-            this.daño = daño;
             this.estaVivo = true;
             this.yaImprimiMuerte = false;
             this.vecesQueRecibioDaño = 0;
@@ -68,7 +66,11 @@ namespace TallerDiseno3D_ExaIndi
             int dañoQueVoyARetornar = this.daño;
             return dañoQueVoyARetornar;
         }
-
+        public int GetVida()
+        {
+            int vidaQueVoyARetornar = this.vida;
+            return vidaQueVoyARetornar;
+        }
         public bool EstaVivo()
         {
             if (this.vida > 0)

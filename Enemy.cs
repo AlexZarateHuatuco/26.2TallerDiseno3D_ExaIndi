@@ -17,5 +17,9 @@ namespace TallerDiseno3D_ExaIndi
         {
             return vida > 0;
         }
+        public int GetDaño()
+        {
+            return daño;
+        }
     }
 }
